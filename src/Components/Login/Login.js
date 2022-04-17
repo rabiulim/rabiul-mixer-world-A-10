@@ -3,6 +3,8 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import OtherSignIn from '../OtherSignIn/OtherSignIn'
+import './Login.css'
 
 
 const Login = () => {
@@ -56,8 +58,8 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-2'>Please Login</h2>
+        <div className='container w-50 mx-auto login-container'>
+            <h2 className='text-info text-center mt-2'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -67,13 +69,14 @@ const Login = () => {
 
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button className='w-50 mx-auto d-block mb-3' variant="primary" type="submit">
+                <Button className='w-50 mx-auto d-block mb-3 text-white fs-4 fw-bold' variant="info" type="submit">
                     LogIn
                 </Button>
             </Form>
             {errorElement}
             <p className='mx-auto w-75'>New to Genius Car? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Please Register</Link> </p>
             <p className='mx-auto w-75'>Forgot Password? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link> </p>
+            <OtherSignIn></OtherSignIn>
         </div>
     );
 };

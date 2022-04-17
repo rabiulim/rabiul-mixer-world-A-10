@@ -15,31 +15,26 @@ const Header = () => {
     }
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky='top'>
+            <Navbar collapseOnSelect expand="lg" bg="info" variant="dark" sticky='top'>
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <p className='text-2xl'>Rabiul Mixer World</p>
+                        <p className='fs-1 my-3 text-dark fw-bold'>Rabiul Mixer World</p>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="home#services">Services</Nav.Link>
-                            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown>
+                            <Nav.Link className='fs-4 text-white fw-bolder' href="home#services">Services</Nav.Link>
+                            <Nav.Link className='fs-4 text-white fw-bolder' as={Link} to="/blog">Blog</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/aboutme">About</Nav.Link>
+                            <Nav.Link className='fs-4 text-white fw-bolder my-3' as={Link} to="/aboutme">About</Nav.Link>
                             {
                                 user ?
-                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignout}>SignOut</button>
+                                    <button className='btn btn-link text-white text-decoration-none
+                                    fw-bolder fs-4 my-3' onClick={handleSignout}>SignOut</button>
                                     :
-                                    <Nav.Link as={Link} to="/login">
+                                    <Nav.Link as={Link}
+                                        className='fs-4 text-white fw-bolder my-3' to="/login">
                                         Login
                                     </Nav.Link>}
 
