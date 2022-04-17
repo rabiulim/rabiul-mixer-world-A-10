@@ -1,44 +1,37 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "name": "Debotakhum, Chittogong",
+        "price": 6500,
+        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "name": "Debotakhum, Chittogong",
+        "price": 7000,
+        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "name": "Debotakhum, Chittogong",
+        "price": 2500,
+        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
-        "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "name": "Debotakhum, Chittogong",
+        "price": 5000,
+        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
-    },
-    {
-        "id": 6,
-        "name": "COMPLETE ANALYSIS",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "name": "Debotakhum, Chittogong",
+        "price": 3000,
+        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     }
 ]
