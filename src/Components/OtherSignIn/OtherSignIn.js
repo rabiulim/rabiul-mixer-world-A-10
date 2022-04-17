@@ -3,12 +3,14 @@ import google from '../../images/social-icon/google.png'
 import fasebook from '../../images/social-icon/fasebook.png'
 import github from '../../images/social-icon/github.png'
 
-import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 const OtherSignIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const [signInWithFacebook, userFb, loadingFb, errorFb] = useSignInWithFacebook(auth);
+
     const navigate = useNavigate();
 
     let errorElement;
@@ -20,7 +22,7 @@ const OtherSignIn = () => {
 
     }
 
-    if (user || user1) {
+    if (user || userFb || user1) {
         navigate('/home')
     }
 
@@ -39,7 +41,7 @@ const OtherSignIn = () => {
                     <img style={{ width: '30px' }} src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
-                <button className='btn btn-info d-block mx-auto w-50 my-3'>
+                <button onClick={() => signInWithFacebook()} className='btn btn-info d-block mx-auto w-50 my-3'>
                     <img style={{ width: '30px' }} src={fasebook} alt="" />
                     <span className='px-2'>Fasebook Sign In </span>
                 </button>
