@@ -1,9 +1,9 @@
 import React from 'react';
-
+import errorpic from '../../images/errorpic.jpg'
 const NotFound = () => {
     return (
-        <div>
-            <h1>Sorry try again, this page not available</h1>
+        <div className=''>
+            <img className='rounded mx-auto d-block w-75 mt-5' src={errorpic} alt="" />
         </div>
     );
 };
