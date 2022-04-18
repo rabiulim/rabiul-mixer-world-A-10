@@ -4,7 +4,10 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import OtherSignIn from '../OtherSignIn/OtherSignIn'
+import Loading from '../Loading/Loading';
 import './Login.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -27,6 +30,10 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         navigate(from, { replace: true });
@@ -53,8 +60,13 @@ const Login = () => {
 
     const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('plz enter your email')
+        }
     }
 
     return (
@@ -75,7 +87,8 @@ const Login = () => {
             </Form>
             {errorElement}
             <p className='mx-auto w-75 text-white'>New to Genius Car? <Link to="/signup" className='text-white fw-bolder pe-auto text-decoration-none' onClick={navigateSignUp}>Please Register</Link> </p>
-            <p className='mx-auto w-75 fw-bold text-white'>Forgot Password? <Link to="/register" className='text-white pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link> </p>
+            <p className='mx-auto w-75 fw-bold text-white'>Forgot Password? <button className='text-white fs-5 pe-5 pb-3 btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <ToastContainer></ToastContainer>
             <OtherSignIn></OtherSignIn>
         </div>
     );

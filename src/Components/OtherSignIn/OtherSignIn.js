@@ -6,23 +6,30 @@ import github from '../../images/social-icon/github.png'
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
+
+
+
 const OtherSignIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const [signInWithGithub, GitUser, GitLoading, GitError] = useSignInWithGithub(auth);
     const [signInWithFacebook, userFb, loadingFb, errorFb] = useSignInWithFacebook(auth);
 
     const navigate = useNavigate();
 
     let errorElement;
+    if (loading || GitLoading || loadingFb) {
+        return <Loading></Loading>
+    }
 
-    if (error || error1) {
+    if (error || GitError || errorFb) {
 
         errorElement =
-            <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
+            <p className='text-danger'>Error: {error?.message} {GitError?.message} {errorFb?.message}</p>
 
     }
 
-    if (user || userFb || user1) {
+    if (user || userFb || GitUser) {
         navigate('/home')
     }
 

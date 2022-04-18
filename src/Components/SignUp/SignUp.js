@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import OtherSignIn from '../OtherSignIn/OtherSignIn';
 import './SignUp.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -37,6 +39,7 @@ const Singup = () => {
                     <input type="password" name='password' placeholder='Your Password' required /> <br />
                     <button type="submit">Sing-up</button>
                     <p className='allready'>Already have an account? <Link className='text-white text-decoration-none' to="/login">Plz Login</Link> </p>
+                    <ToastContainer />
                     <OtherSignIn></OtherSignIn>
                 </form>
             </div>
