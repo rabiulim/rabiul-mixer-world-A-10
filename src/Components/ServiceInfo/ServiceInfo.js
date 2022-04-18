@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const ServiceInfo = (props) => {
-    console.log(props)
+const ServiceInfo = () => {
     const { serviceID } = useParams();
     return (
         <div>

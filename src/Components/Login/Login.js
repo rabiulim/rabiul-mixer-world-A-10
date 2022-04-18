@@ -74,8 +74,8 @@ const Login = () => {
                 </Button>
             </Form>
             {errorElement}
-            <p className='mx-auto w-75'>New to Genius Car? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Please Register</Link> </p>
-            <p className='mx-auto w-75'>Forgot Password? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link> </p>
+            <p className='mx-auto w-75 text-white'>New to Genius Car? <Link to="/signup" className='text-white fw-bolder pe-auto text-decoration-none' onClick={navigateSignUp}>Please Register</Link> </p>
+            <p className='mx-auto w-75 fw-bold text-white'>Forgot Password? <Link to="/register" className='text-white pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link> </p>
             <OtherSignIn></OtherSignIn>
         </div>
     );
