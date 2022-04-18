@@ -40,10 +40,10 @@ const Login = () => {
     }
 
     if (error) {
-
-        errorElement =
-            <p className='text-danger'>Error: {error?.message} </p>
-
+        errorElement = <p style={{ 'color': 'salmon' }} className='fs-5 fw-bold '>Error: {error?.message} </p>
+    }
+    else {
+        errorElement = "";
     }
 
     const handleSubmit = event => {

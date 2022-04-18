@@ -57,7 +57,7 @@ const Singup = () => {
                     <input type="text" name='name' placeholder='Your Name' /> <br />
                     <input type="email" name='email' placeholder='Your Email' required /> <br />
                     <input type="password" name='password' placeholder='Your Password' required /> <br />
-                    <button type="submit">Sing-up</button>
+                    <button className='signup-submit' type="submit">Sing-up</button>
                     <p className='allready'>Already have an account? <Link className='text-white text-decoration-none' to="/login">Plz Login</Link> </p>
                     <ToastContainer />
                     <OtherSignIn></OtherSignIn>

@@ -1,37 +1,37 @@
 [
     {
         "id": 1,
-        "name": "Debotakhum, Chittogong",
+        "name": "Inani Beach, Coxes Bazar",
         "price": 6500,
-        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
-        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+        "description": "Inani Beach is so familiar for logest Beach.It situated in CoxesBazar.It has a lot of coral stones, which are very sharp. These coral stones look black and green, and they are found in summer or rainy seasons.I will help you check out the Inani Beach by my experience. ",
+        "img": "https://images.unsplash.com/photo-1619177383949-f03975e50b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y294JTIwYmF6YXIlMjBzZWElMjBiZWFjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
     },
     {
         "id": 2,
         "name": "Debotakhum, Chittogong",
         "price": 7000,
-        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
+        "description": "Debotakhum is a great place for watarfall and Mountains.It situated bandarban distric under Chittogong.You can enjoy it more with my good instruction.",
         "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
         "id": 3,
-        "name": "Debotakhum, Chittogong",
+        "name": "Saint Martin Island, Teknaf",
         "price": 2500,
-        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
-        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+        "description": "Sain Martin Island is only one coral island.St. Martin's Island  is a small island (area only 3 km2) in the northeastern part of the Bay of Bengal.The best weather is usually between November and February.So let's explore it with me.",
+        "img": "https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2FpbnQlMjBtYXJ0aW4lMjBpc2xhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
     },
     {
         "id": 4,
-        "name": "Debotakhum, Chittogong",
+        "name": "Sajek valley (Rangamati)",
         "price": 5000,
-        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
-        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+        "description": "Sajek Tripuri Valley is one of the most popular tourist spots in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari Upazila in Rangamati.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1647456351101-a5d6c534dba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNhamVrJTIwdmFsbGV5JTIwKHJhbmdhbWF0aSl8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
     },
     {
         "id": 5,
-        "name": "Debotakhum, Chittogong",
+        "name": "Jaflong, Sylhet",
         "price": 3000,
-        "description": "Debotakhum is a great place for watarfall and Mountains.You can enjoy it more with my good instruction.",
-        "img": "https://images.unsplash.com/photo-1646665780583-7a8e945e8860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+        "description": "Jaflong is a tourist spot in Sylhet division. It is about 60 km from Sylhet town and takes two hours drive to reach there. Jaflong located amidst tea gardens and hills. It is situated beside the river Sari in the lap of Hill Khashia.You can enjoy it more with my good instruction.",
+        "img": "https://images.unsplash.com/photo-1643001607577-0a0332e79aab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFmbG9uZyUyMCU3QyUyMCVFMCVBNiU5QyVFMCVBNiVCRSVFMCVBNiVBQiVFMCVBNiVCMiVFMCVBNiU4MnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
     }
 ]

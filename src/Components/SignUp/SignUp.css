@@ -52,7 +52,7 @@ button {
 
 }
 
-button:hover {
+.signup-submit:hover {
     background-color: black;
     color: white;
 }
