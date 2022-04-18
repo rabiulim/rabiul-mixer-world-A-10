@@ -1,15 +1,21 @@
-import React from 'react';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import React, { useState } from 'react';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import OtherSignIn from '../OtherSignIn/OtherSignIn';
 import './SignUp.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../Loading/Loading';
 
 
 
 const Singup = () => {
+
+    const [sendEmailVerification, sending, Verifyerror] = useSendEmailVerification(
+        auth
+    );
+
     const navigate = useNavigate();
     const [
         createUserWithEmailAndPassword,
@@ -18,14 +24,28 @@ const Singup = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    if (Verifyerror) {
+        return (
+            <div>
+                <p>Error: {error.message}</p>
+            </div>
+        );
+    }
+    if (sending) {
+        return <p>Sending...</p>;
+    }
 
-    const handleSignUp = event => {
+
+    const handleSignUp = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
+
         console.log(email, password, name);
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await sendEmailVerification();
+        alert('Sent email');
         navigate('/home')
 
     }
